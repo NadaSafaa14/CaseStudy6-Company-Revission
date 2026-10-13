@@ -24,6 +24,9 @@ builder.Services.AddScoped<IEmployeeRepo, EmployeeRepo>();
 
 builder.Services.AddScoped<IEmployeeProjectRepo, EmployeeProjectRepo>();
 
+builder.Services.AddScoped<IAuthRepo, AuthRepo>();
+
+
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 
@@ -65,6 +68,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

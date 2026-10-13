@@ -3,6 +3,7 @@ using CaseStudy6_Company_Revission.DTOs.EmployeeProjectDTO;
 using CaseStudy6_Company_Revission.DTOs.ProjectsDTO;
 using CaseStudy6_Company_Revission.Models;
 using CaseStudy6_Company_Revission.UoW.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
